@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservar pista"
+        android:textColor="@color/text_white"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPistaSeleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lime"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="24dp"
+        android:text="Pista 1"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputDark" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Fecha (YYYY-MM-DD)"
+        android:layout_marginBottom="12dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFecha" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="date"
+            android:textColor="@color/text_white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputDark" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Hora inicio (HH:MM)"
+        android:layout_marginBottom="12dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHoraInicio" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="time"
+            android:textColor="@color/text_white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/InputDark" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="Hora fin (HH:MM)"
+        android:layout_marginBottom="24dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHoraFin" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:inputType="time"
+            android:textColor="@color/text_white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button android:id="@+id/btnReservar" style="@style/BtnLime"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Confirmar reserva"/>
+</LinearLayout>
