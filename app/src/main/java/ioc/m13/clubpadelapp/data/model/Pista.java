@@ -12,7 +12,6 @@ public class Pista {
     // Estado pista
     private String estado;
 
-
     // Getters y setters
     public Long getId() {return this.id;}
     public String getNombre() {return this.nombre;}
